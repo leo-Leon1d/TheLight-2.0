@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 class ViewController: UIViewController {
     
     //MARK: - Properies
@@ -17,8 +16,8 @@ class ViewController: UIViewController {
     }
     
     //Switch variable
-    var isLightOn: Bool = false
-    
+
+    var isLightOn = false
     //MARK: - Methods
     
     override func viewDidLoad() {
@@ -29,12 +28,12 @@ class ViewController: UIViewController {
     //Function color update on the screen
     fileprivate func updateUI() {
         
-        view.backgroundColor = isLightOn ? .white : .black
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        isLightOn.toggle()
+              
+        func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+       isLightOn.toggle()
         updateUI()
-   
+        
+    }
+
     }
 }
